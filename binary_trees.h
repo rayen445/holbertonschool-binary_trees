@@ -4,7 +4,8 @@
 #include <stddef.h>
 
 /* Basic Binary Tree Structure */
-typedef struct binary_tree_s {
+typedef struct binary_tree_s
+{
     int n;
     struct binary_tree_s *parent;
     struct binary_tree_s *left;
@@ -12,6 +13,7 @@ typedef struct binary_tree_s {
 } binary_tree_t;
 
 /* Function Prototypes */
-size_t binary_tree_nodes(const binary_tree_t *tree);
+size_t binary_tree_height(const binary_tree_t *tree);
+int binary_tree_balance(const binary_tree_t *tree);
 
 #endif /* BINARY_TREES_H */
